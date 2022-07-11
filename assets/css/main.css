@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --brown: #9d8189;
+  --pink: #f4acb7;
+}
+
+* {
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 120px 1fr 60px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "cabecalho"
+    "principal"
+    "rodape";
+}
+
+/* 
+HEADER 
+*/
+
+.cabecalho {
+  grid-area: cabecalho;
+  color: #fff;
+  background-color: var(--brown);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  z-index: 1;
+  box-shadow: 7px 10px 13px 2px rgba(157, 129, 137, 0.36);
+}
+
+.cabecalho > h1 {
+  margin: 0px;
+  font-weight: 300;
+  font-size: 2.8rem;
+}
+
+.cabecalho > h2 {
+  margin: 0px;
+  font-weight: 200;
+  font-size: 1.6rem;
+}
+
+/* 
+MAIN
+*/
+
+.principal {
+  grid-area: principal;
+  height: calc(100vh - 180px);
+  padding: 20px;
+  background-color: #fff;
+}
+
+.conteudo {
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+.modulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.modulo {
+  flex-basis: 32%;
+  margin-bottom: 1em;
+}
+
+.modulo > h3 {
+  margin: 0px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  background-color: var(--brown);
+}
+
+.modulo > ul {
+  margin: 0px;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.modulo > ul > li {
+  padding: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.modulo > ul > li > a {
+  display: flex;
+  text-decoration: none;
+  color: var(--brown);
+}
+
+.modulo > ul > li:hover {
+  background-color: var(--pink);
+}
+
+.modulo > ul > li > a:hover {
+  color: #fff;
+}
+
+.modulo.red {border: 2px solid #f94144;}
+.modulo.red > h3 {background-color: #f94144;}
+.modulo.orange {border: 2px solid #f3722c;}
+.modulo.orange > h3 {background-color: #f3722c;}
+.modulo.yellow {border: 2px solid #f9c74f;}
+.modulo.yellow > h3 {background-color: #f9c74f;}
+.modulo.green {border: 2px solid #90be6d;}
+.modulo.green > h3 {background-color: #90be6d;}
+.modulo.blue {border: 2px solid #577590;}
+.modulo.blue > h3 {background-color: #577590;}
+.modulo.navy {border: 2px solid #277da1;}
+.modulo.navy > h3 {background-color: #277da1;}
+.modulo.purple {border: 2px solid #800080;}
+.modulo.purple > h3 {background-color: #800080;}
+.modulo.pink {border: 2px solid #ffc0cb;}
+.modulo.pink > h3 {background-color: #ffc0cb;}
+.modulo.salmon {border: 2px solid #fa8072;}
+.modulo.salmon > h3 {background-color: #fa8072;}
+
+/* 
+FOOTER
+*/
+
+.rodape {
+  grid-area: rodape;
+  background-color: var(--brown);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.2rem;
+  padding-right: 20px;
+  color: #fff;
+  font-weight: 100;
+}
