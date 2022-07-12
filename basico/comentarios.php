@@ -2,23 +2,25 @@
 
 <?php
     echo "Estou no PHP";
-    // echo "Comentário";
-    # echo "Comentário";
-    # echo // "Comentário";
-    // echo # "Comentário";
+    // echo "Comentario";
+    # echo "Comentario";
+    # echo // "Comentario";
+    // echo # "Comentario";
 // # ?>
 
 <p>Depois do primeiro bloco!</p>
+<!-- <p>Comentario html </p> -->
 
 <?php
     /*
-        Linha 1 do comentário
-        Linha 2 do comentário
-        Linha 3 do comentário
+        Linha 1 do comentario
+        Linha 2 do comentario
+        Linha 3 do comentario
 ?>  */
 ?>
 
-<!-- comentario feito com // e # não são absolutos, enquanto comentários feitos com /* são, eles sobrepoem até o fechamento do php
+<!--
+    comentario feito com // e # nao sao absolutos, enquanto comentarios feitos com /* sao, eles sobrepoem até o fechamento do php
 -->
 
 <p>Depois do segundo bloco!</p>
