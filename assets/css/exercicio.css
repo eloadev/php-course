@@ -7,10 +7,6 @@ body.exercicio {
   "rodape";
 }
 
-.principal {
-  height: calc(100vh - 240px);
-}
-
 .navegacao {
   grid-area: navegacao;
   display: flex;
@@ -29,4 +25,21 @@ body.exercicio {
 }
 
 .navegacao > a.red {background-color: #f94144;}
+.navegacao > a.yellow {background-color: #f9c74f;}
 .navegacao > a.green {background-color: #90be6d;}
+
+.principal {
+  height: calc(100vh - 240px);
+}
+
+.conteudo {
+  font-size: 2rem;
+}
+
+.conteudo > .titulo {
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #9d8189;
+  margin-bottom: 20px;
+}
